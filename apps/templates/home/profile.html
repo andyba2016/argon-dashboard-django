@@ -111,14 +111,14 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-first-name">First name</label>
-                    <input type="text" id="input-first-name" class="form-control" placeholder="First name" value="Lucky">
+                    <label class="form-control-label" for="input-first-name">First name:</label>
+                    <input type="text" id="input-first-name" class="form-control" placeholder="First name" value="{{ request.user.name }}">
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label class="form-control-label" for="input-last-name">Last name</label>
-                    <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="Jesse">
+                    <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="{{ request.user.lastname }}">
                   </div>
                 </div>
               </div>

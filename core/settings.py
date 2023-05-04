@@ -76,6 +76,17 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'db',
+        'NAME': 'tracking',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'ATOMIC_REQUEST': True,
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -120,6 +131,7 @@ STATICFILES_DIRS = (
     os.path.join(CORE_DIR, 'apps/static'),
 )
 
-
+LOGGING_CONFIG = None
+LOGGING = None
 #############################################################
 #############################################################
